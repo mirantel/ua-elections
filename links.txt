@@ -1,0 +1,4 @@
+-<!-- http://jsfiddle.net/py3DE/ -->
+ -<!-- http://jsfiddle.net/rniemeyer/UdXr4/ -->
+ -<!-- http://jsfiddle.net/mstefanko/LEjf8/9/ -->
+ -<!-- http://codereview.stackexchange.com/questions/25546/jquery-sortable-style-function -->
