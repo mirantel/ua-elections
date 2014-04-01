@@ -1,8 +1,14 @@
 $(window).load(function(){
 
-$("#voite, .voit__cell, #result").sortable({
+$("#voite, .voit-cell").sortable({
   placeholder: "ui-sortable-placeholder",
-  opacity: 0.6
+  connectWith: ".connectedSortable",
+  receive: function(event, ui) {
+		var $this = $(this);
+		if ($this.children('.voit-item').length > 1 && $this.attr('id') != "voite") {
+			$(ui.sender).sortable('cancel');
+		}
+	}
 });
 
 });

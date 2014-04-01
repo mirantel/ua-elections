@@ -1,7 +1,11 @@
+body { min-width: 550px; }
+
 a { text-decoration: underline; }
 a:hover { text-decoration: none; }
 
-.header { padding: 65px 0 50px; text-align: center; }
+label { text-transform: uppercase; color: #4B4136; font-weight: normal; text-transform: uppercase; font-size: 13px; letter-spacing: 0.05em; }
+
+.header { padding: 65px 0 70px; text-align: center; }
 
 .main-title { margin-bottom: 35px; }
 
@@ -17,7 +21,7 @@ a:hover { text-decoration: none; }
 
 .main { background: #F0EEEA; padding: 70px 0; }
 
-.nav a { margin: 0 20px; }
+.nav a { margin: 0 20px; white-space: nowrap; }
 
 .footer { padding: 60px 0; text-align: center; font-size: 13px; vertical-align: middle; }
 .footer p { margin: 0; }
@@ -27,10 +31,12 @@ a:hover { text-decoration: none; }
 
 .ico-stfalcon { display: inline-block; width: 20px; height: 19px; margin-right: 2px; background: url(../img/ico-stfalcon.png); background-repeat: no-repeat; vertical-align: text-bottom; }
 
-label { text-transform: uppercase; color: #4B4136; font-weight: normal; text-transform: uppercase; font-size: 13px; }
+.container_voit { max-width: 960px; padding: 0; }
 
-.voit__col { width: 240px; float: left; margin: 0 40px; }
-.voit__col label { display: block; text-align: center; margin-bottom: 9px; }
+.voit { background: url("../img/vote-arrow.png") 50% 0 no-repeat; padding-top: 17px; margin-top: -42px; }
+.voit label { display: block; text-align: center; margin-bottom: 9px; }
+
+.voit__col { width: 50%; float: left; position: relative; padding-left: 40px; padding-right: 40px; }
 
 .voit__data, .voit__result { min-height: 540px; border: 1px dashed #c2beb7; border-radius: 7px; }
 
@@ -38,13 +44,19 @@ label { text-transform: uppercase; color: #4B4136; font-weight: normal; text-tra
 
 .voit__cell { height: 54px; border-top: 1px dashed #c2beb7; padding: 2px; position: relative; }
 .voit__cell:first-child { border-top: 0; }
-.voit__cell:before { content: counter(item) "."; counter-increment: item; position: absolute; left: -36px; top: 13px; font-size: 18px; color: #4B4136; text-align: right; width: 30px; }
+.voit__cell:before { content: counter(item) "."; counter-increment: item; position: absolute; left: -39px; top: 13px; font-size: 18px; color: #4B4136; text-align: right; width: 30px; }
 
 .ui-sortable-placeholder { background: rgba(75, 65, 54, 0.1); height: 49px; border-radius: 3px; margin-bottom: 5px; }
 
 .voit__data { padding: 2px; }
 
-.voit__item { background: white url("../img/ellipse.png") 218px 50% no-repeat; border: 1px solid #c2beb7; padding: 2px; padding-left: 50px; width: 232px; line-height: 43px; font-size: 18px; border-radius: 3px; cursor: pointer; margin-bottom: 5px; position: relative; }
+.voit__item { background: white url("../img/ellipse.png") 100% 50% no-repeat; border: 1px solid #c2beb7; padding: 2px; padding-left: 53px; line-height: 43px; font-size: 18px; border-radius: 3px; cursor: pointer; margin-bottom: 5px; position: relative; }
 .voit__item:last-child { margin-bottom: 0; }
 .voit__item img { border-radius: 2px; vertical-align: top; max-width: 43px; max-height: 43px; position: absolute; top: 2px; left: 2px; }
 .voit__item.ui-sortable-helper { background-image: url("../img/ellipse_h.png"); border-color: #0073d2; cursor: move; }
+
+@media (max-width: 620px) { .voit__item { font-size: 14px; } }
+.voit__form p { margin-bottom: 65px; }
+.voit__form .form-group { margin-bottom: 18px; }
+.voit__form .btn-success { margin-top: 10px; text-transform: uppercase; width: 240px; border-width: 0; border-bottom-width: 2px; height: 48px; }
+.voit__form .vote-form-year { width: 135px; }

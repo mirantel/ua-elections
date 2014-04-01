@@ -1,12 +1,23 @@
-.voit__col{
-	width: 240px;
-	float: left;
-	margin: 0 40px;
+.container_voit {
+	max-width: 960px;
+	padding: 0;
+}
+.voit {
+	background: url('../img/vote-arrow.png') 50% 0 no-repeat;
+	padding-top: 17px;
+	margin-top: -42px;
 	label{
 		display: block;
 		text-align: center;
 		margin-bottom: 9px;
 	}
+}
+.voit__col {
+	width: 50%;
+	float: left;
+	position: relative;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 .voit__data,
 .voit__result {
@@ -32,7 +43,7 @@
 		content: counter(item) ".";
 		counter-increment: item;
 		position: absolute;
-		left: -36px;
+		left: -39px;
 		top: 13px;
 		font-size: 18px;
 		color: #4B4136;
@@ -46,15 +57,15 @@
 	border-radius: 3px;
 	margin-bottom: 5px;
 }
+
 .voit__data {
 	padding: 2px;
 }
 .voit__item {
-	background: #FFF url('../img/ellipse.png') 218px 50% no-repeat;
+	background: #FFF url('../img/ellipse.png') 100% 50% no-repeat;
 	border: 1px solid #c2beb7;
 	padding: 2px;
-	padding-left: 50px;
-	width: 232px;
+	padding-left: 53px;
 	line-height: 43px;
 	font-size: 18px;
 	border-radius:3px;
@@ -77,5 +88,30 @@
 		background-image: url('../img/ellipse_h.png');
 		border-color: #0073d2;
 		cursor: move;
+	}
+}
+@media (max-width: 620px) {
+	.voit__item {
+		font-size: 14px;
+	}
+}
+
+.voit__form{
+	p{
+		margin-bottom: 65px;
+	}
+	.form-group {
+		margin-bottom: 18px;
+	}
+	.btn-success{
+		margin-top: 10px;
+		text-transform: uppercase;
+		width: 240px;
+		border-width: 0;
+		border-bottom-width: 2px;
+		height: 48px;
+	}
+	.vote-form-year{
+		width: 135px;
 	}
 }
