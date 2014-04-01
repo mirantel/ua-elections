@@ -84,9 +84,11 @@
 		top: 2px;
 		left: 2px;
 	}
-	&.ui-sortable-helper {
+	&:hover, &.ui-sortable-helper {
 		background-image: url('../img/ellipse_h.png');
 		border-color: #0073d2;
+	}
+	&.ui-sortable-helper{
 		cursor: move;
 	}
 }
