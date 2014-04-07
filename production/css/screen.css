@@ -31,6 +31,19 @@ label { text-transform: uppercase; color: #4B4136; font-weight: normal; text-tra
 
 .ico-stfalcon { display: inline-block; width: 20px; height: 19px; margin-right: 2px; background: url(../img/ico-stfalcon.png); background-repeat: no-repeat; vertical-align: text-bottom; }
 
+.social-icon { display: inline-block; height: 32px; width: 32px; vertical-align: middle; position: relative; opacity: 0.6; -webkit-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1); transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1); }
+.social-icon:hover { opacity: 1; }
+
+.social-icon_wiki { background-image: url(../img/icon-wiki.png); }
+
+.social-icon_fb { background-image: url(../img/icon-fb.png); }
+
+.social-icon_tw { background-image: url(../img/icon-tw.png); }
+
+.social-icon_vk { background-image: url(../img/icon-vk.png); }
+
+.social-icon_youtube { background-image: url(../img/icon-youtube.png); }
+
 .vote { max-width: 960px; padding: 0; }
 
 .vote__row { background: url("../img/vote-arrow.png") 50% 0 no-repeat; padding-top: 17px; margin-top: -42px; }
@@ -61,3 +74,13 @@ label { text-transform: uppercase; color: #4B4136; font-weight: normal; text-tra
 .vote__form .form-group { margin-bottom: 18px; }
 .vote__form .btn-success { margin-top: 10px; text-transform: uppercase; width: 240px; border-width: 0; border-bottom-width: 2px; height: 48px; }
 .vote__form .vote-form-year { width: 135px; }
+
+.candidates h2 { text-align: center; }
+
+.candidates__row { border-bottom: 1px solid #ccc; margin: 40px 0; }
+
+.candidates__photo { text-align: center; }
+.candidates__photo img { border-radius: 30px; }
+
+.candidates__links { margin-bottom: 24px; }
+.candidates__links a { margin-left: 2px; }

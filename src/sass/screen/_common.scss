@@ -99,3 +99,36 @@ label {
 	background-repeat: no-repeat;
 	vertical-align: text-bottom;
 }
+
+.social-icon {
+	display: inline-block;
+	height: 32px;
+	width: 32px;
+	vertical-align: middle;
+	position: relative;
+	opacity: 0.6;
+	transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+	&:hover{
+		//top: -3px;
+		opacity: 1;
+	}
+}
+.social-icon_wiki {
+	background-image: url(../img/icon-wiki.png);
+}
+.social-icon_fb {
+	background-image: url(../img/icon-fb.png);
+	
+}
+.social-icon_tw {
+	background-image: url(../img/icon-tw.png);
+	
+}
+.social-icon_vk {
+	background-image: url(../img/icon-vk.png);
+	
+}
+.social-icon_youtube {
+	background-image: url(../img/icon-youtube.png);
+	
+}
