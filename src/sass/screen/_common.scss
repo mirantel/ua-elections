@@ -8,12 +8,13 @@ a {
 	}
 }
 label {
+	display: inline-block;
 	text-transform: uppercase;
 	color: #4B4136;
 	font-weight: normal;
-	text-transform: uppercase;
 	font-size: 13px;
 	letter-spacing: 0.05em;
+	margin-bottom: 5px;
 }
 
 .header{
@@ -61,8 +62,10 @@ label {
 }
 
 .main{
-	background: #F0EEEA;
-	padding: 70px 0;
+	//background: #F0EEEA;
+	//padding: 70px 0;
+	margin: 0 auto;
+	max-width: 940px;
 }
 
 .container_main {
@@ -104,34 +107,21 @@ label {
 	background-repeat: no-repeat;
 	vertical-align: text-bottom;
 }
-
-.btn-link {
-	height: 32px;
+.social-icon-group {
+	font-size: 0;
 	display: inline-block;
-	line-height: 32px;
-	border: 1px solid #c0c0c0;
-	border-radius: 3px;
-	padding: 0 15px;
-	background-color: rgba(255,255,255,.7);
-	background-image: linear-gradient(to bottom, rgba(240,238,234,1) 0%,rgba(255,255,255,0) 100%);
-	text-decoration: none;
-	transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-	&:hover {
-		text-decoration: none;
-		border-color: #c0c0c0;
-		background-color: #fff;
-	}
+	vertical-align: middle;
 }
 
 .social-icon {
 	display: inline-block;
-	height: 32px;
-	width: 32px;
+	height: 24px;
+	width: 24px;
 	position: relative;
-	opacity: 0.7;
-	transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+	transition: all 0.3s liner;
+	margin:0 10px 0 0;
 	&:hover{
-		opacity: 1;
+		transform: scale(1.1);
 	}
 }
 .social-icon_wiki {
@@ -139,19 +129,15 @@ label {
 }
 .social-icon_fb {
 	background-image: url(../img/icon-fb.png);
-	
 }
 .social-icon_tw {
 	background-image: url(../img/icon-tw.png);
-	
 }
 .social-icon_vk {
 	background-image: url(../img/icon-vk.png);
-	
 }
 .social-icon_youtube {
 	background-image: url(../img/icon-youtube.png);
-	
 }
 .conteiner_main {
 	max-width: 960px;
