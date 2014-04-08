@@ -2,6 +2,7 @@
 	max-width: 960px;
 	padding: 0;
 }
+
 .vote__row {
 	background: url('../img/vote-arrow.png') 50% 0 no-repeat;
 	padding-top: 17px;
@@ -127,19 +128,47 @@
 
 .candidates__row {
 	border-bottom: 1px solid #ccc;
-	margin: 40px 0;
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+.candidates__info {
+	padding-top: 16px;
 }
 
 .candidates__photo {
 	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
 	img{
 		border-radius: 30px;
 	}
 }
 
 .candidates__links {
-	margin-bottom: 24px;
+	margin-bottom: 40px;
 	a{
 		margin-left: 2px;
+		vertical-align: top;
+	}
+}
+
+.winners {
+	h2, h3 {
+		text-align: center;
+	}
+	h3 {
+		min-height: 95px;
+	}
+}
+
+.winners__candidate {
+	text-align: center;
+	padding: 25px 0;
+	border-radius: 30px;
+	border: 1px solid #ccc;
+	img{
+		border-radius: 30px;
 	}
 }

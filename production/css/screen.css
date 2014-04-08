@@ -21,6 +21,8 @@ label { text-transform: uppercase; color: #4B4136; font-weight: normal; text-tra
 
 .main { background: #F0EEEA; padding: 70px 0; }
 
+.container_main { max-width: 960px; padding: 0; }
+
 .nav a { margin: 0 20px; white-space: nowrap; }
 
 .footer { padding: 60px 0; text-align: center; font-size: 13px; vertical-align: middle; }
@@ -31,7 +33,10 @@ label { text-transform: uppercase; color: #4B4136; font-weight: normal; text-tra
 
 .ico-stfalcon { display: inline-block; width: 20px; height: 19px; margin-right: 2px; background: url(../img/ico-stfalcon.png); background-repeat: no-repeat; vertical-align: text-bottom; }
 
-.social-icon { display: inline-block; height: 32px; width: 32px; vertical-align: middle; position: relative; opacity: 0.6; -webkit-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1); transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1); }
+.btn-link { height: 32px; display: inline-block; line-height: 32px; border: 1px solid #c0c0c0; border-radius: 3px; padding: 0 15px; background-color: rgba(255, 255, 255, 0.7); background-image: -webkit-linear-gradient(top, #f0eeea 0%, rgba(255, 255, 255, 0) 100%); background-image: linear-gradient(to bottom, #f0eeea 0%, rgba(255, 255, 255, 0) 100%); text-decoration: none; -webkit-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1); transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1); }
+.btn-link:hover { text-decoration: none; border-color: #c0c0c0; background-color: #fff; }
+
+.social-icon { display: inline-block; height: 32px; width: 32px; position: relative; opacity: 0.7; -webkit-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1); transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1); }
 .social-icon:hover { opacity: 1; }
 
 .social-icon_wiki { background-image: url(../img/icon-wiki.png); }
@@ -43,6 +48,8 @@ label { text-transform: uppercase; color: #4B4136; font-weight: normal; text-tra
 .social-icon_vk { background-image: url(../img/icon-vk.png); }
 
 .social-icon_youtube { background-image: url(../img/icon-youtube.png); }
+
+.conteiner_main { max-width: 960px; padding: 0; }
 
 .vote { max-width: 960px; padding: 0; }
 
@@ -77,10 +84,19 @@ label { text-transform: uppercase; color: #4B4136; font-weight: normal; text-tra
 
 .candidates h2 { text-align: center; }
 
-.candidates__row { border-bottom: 1px solid #ccc; margin: 40px 0; }
+.candidates__row { border-bottom: 1px solid #ccc; }
+.candidates__row:last-child { border-bottom: none; }
 
-.candidates__photo { text-align: center; }
+.candidates__info { padding-top: 16px; }
+
+.candidates__photo { text-align: center; margin-top: 40px; margin-bottom: 40px; }
 .candidates__photo img { border-radius: 30px; }
 
-.candidates__links { margin-bottom: 24px; }
-.candidates__links a { margin-left: 2px; }
+.candidates__links { margin-bottom: 40px; }
+.candidates__links a { margin-left: 2px; vertical-align: top; }
+
+.winners h2, .winners h3 { text-align: center; }
+.winners h3 { min-height: 95px; }
+
+.winners__candidate { text-align: center; padding: 25px 0; border-radius: 30px; border: 1px solid #ccc; }
+.winners__candidate img { border-radius: 30px; }
