@@ -62,10 +62,16 @@ label {
 }
 
 .main{
-	//background: #F0EEEA;
-	//padding: 70px 0;
+	padding: 10px 0;
 	margin: 0 auto;
 	max-width: 940px;
+}
+
+.main_vote {
+	background: #F0EEEA;
+	padding: 70px 0;
+	max-width: initial;
+	margin: 0;
 }
 
 .container_main {
@@ -111,6 +117,7 @@ label {
 	font-size: 0;
 	display: inline-block;
 	vertical-align: middle;
+	margin: 0 0 0 12px;
 }
 
 .social-icon {
