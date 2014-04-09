@@ -19,13 +19,11 @@ label { display: inline-block; text-transform: uppercase; color: #4B4136; font-w
 .main-title__date span:before { left: 100%; }
 .main-title__date span:after { right: 100%; }
 
+.nav a { margin: 0 20px; white-space: nowrap; }
+
 .main { padding: 10px 0; margin: 0 auto; max-width: 940px; }
 
 .main_vote { background: #F0EEEA; padding: 70px 0; max-width: initial; margin: 0; }
-
-.container_main { max-width: 960px; padding: 0; }
-
-.nav a { margin: 0 20px; white-space: nowrap; }
 
 .footer { padding: 60px 0; text-align: center; font-size: 13px; vertical-align: middle; }
 .footer p { margin: 0; }
@@ -33,24 +31,14 @@ label { display: inline-block; text-transform: uppercase; color: #4B4136; font-w
 .stfalcon { font-family: Arial, Verdana, sans-serif; color: #2C373C; text-decoration: none; margin-left: 3px; }
 .stfalcon:hover { text-decoration: underline; }
 
-.ico-stfalcon { display: inline-block; width: 20px; height: 19px; margin-right: 2px; background: url(../img/ico-stfalcon.png); background-repeat: no-repeat; vertical-align: text-bottom; }
+.btn-vk, .btn-fb { color: #fff; text-decoration: none; margin: 0 10px; }
+.btn-vk:hover, .btn-fb:hover { color: #fff; }
 
-.social-icon-group { font-size: 0; display: inline-block; vertical-align: middle; margin: 0 0 0 12px; }
+.btn-vk { background: #5A81AD; border-color: #4073ad; }
+.btn-vk:hover { background: #5077a3; }
 
-.social-icon { display: inline-block; height: 24px; width: 24px; position: relative; -webkit-transition: all 0.3s liner; transition: all 0.3s liner; margin: 0 10px 0 0; }
-.social-icon:hover { -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); }
-
-.social-icon_wiki { background-image: url(../img/icon-wiki.png); }
-
-.social-icon_fb { background-image: url(../img/icon-fb.png); }
-
-.social-icon_tw { background-image: url(../img/icon-tw.png); }
-
-.social-icon_vk { background-image: url(../img/icon-vk.png); }
-
-.social-icon_youtube { background-image: url(../img/icon-youtube.png); }
-
-.conteiner_main { max-width: 960px; padding: 0; }
+.btn-fb { background: #3B5997; border-color: #244a96; }
+.btn-fb:hover { background: #324f8a; }
 
 .vote { max-width: 960px; padding: 0; }
 
@@ -85,6 +73,23 @@ label { display: inline-block; text-transform: uppercase; color: #4B4136; font-w
 
 .photo-big { border-radius: 10px; max-width: 140px; }
 
+.ico-stfalcon { display: inline-block; width: 20px; height: 19px; margin-right: 2px; background: url(../img/ico-stfalcon.png); background-repeat: no-repeat; vertical-align: text-bottom; }
+
+.social-icon-group { font-size: 0; display: inline-block; vertical-align: middle; margin: 0 0 0 12px; }
+
+.social-icon { display: inline-block; height: 24px; width: 24px; position: relative; -webkit-transition: all 0.3s liner; transition: all 0.3s liner; margin: 0 10px 0 0; }
+.social-icon:hover { -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); }
+
+.social-icon_wiki { background-image: url(../img/icon-wiki.png); }
+
+.social-icon_fb { background-image: url(../img/icon-fb.png); }
+
+.social-icon_tw { background-image: url(../img/icon-tw.png); }
+
+.social-icon_vk { background-image: url(../img/icon-vk.png); }
+
+.social-icon_youtube { background-image: url(../img/icon-youtube.png); }
+
 .candidates { padding: 0 80px; }
 
 .candidates h2 { text-align: center; font-size: 32px; margin: 0 0 5px; }
@@ -104,9 +109,12 @@ label { display: inline-block; text-transform: uppercase; color: #4B4136; font-w
 
 .candidates__link { margin-right: 13px; }
 
-.winners h2 { text-align: center; }
+.modal { background-color: white; border: 1px solid #999999; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 6px; box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5); outline: none; width: 500px; }
 
-.winners__candidate { text-align: center; padding: 25px 0; border-radius: 30px; border: 1px solid #ccc; }
-.winners__candidate img { border-radius: 30px; }
+.modal__header { padding: 15px; border-bottom: 1px solid #e5e5e5; min-height: 16.42857px; }
 
-.winners__system { text-transform: uppercase; color: #4B4136; font-weight: normal; font-size: 13px; letter-spacing: 0.05em; text-align: center; line-height: 1.6; min-height: 40px; }
+.modal__header .close { margin-top: -2px; }
+
+.modal__title { margin: 0; line-height: 1.42857; text-align: center; }
+
+.modal__content { position: relative; padding: 20px; text-align: center; height: 150px; width: 500px; display: table-cell; vertical-align: middle; }

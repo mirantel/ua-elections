@@ -61,6 +61,13 @@ label {
 	}
 }
 
+.nav {
+	a {
+		margin: 0 20px;
+		white-space: nowrap;
+	}
+}
+
 .main{
 	padding: 10px 0;
 	margin: 0 auto;
@@ -72,18 +79,6 @@ label {
 	padding: 70px 0;
 	max-width: initial;
 	margin: 0;
-}
-
-.container_main {
-	max-width: 960px;
-	padding: 0;
-}
-
-.nav {
-	a {
-		margin: 0 20px;
-		white-space: nowrap;
-	}
 }
 
 .footer {
@@ -104,49 +99,27 @@ label {
 		text-decoration: underline;
 	}
 }
-.ico-stfalcon{
-	display: inline-block;
-	width: 20px;
-	height: 19px;
-	margin-right: 2px;
-	background: url(../img/ico-stfalcon.png);
-	background-repeat: no-repeat;
-	vertical-align: text-bottom;
-}
-.social-icon-group {
-	font-size: 0;
-	display: inline-block;
-	vertical-align: middle;
-	margin: 0 0 0 12px;
-}
 
-.social-icon {
-	display: inline-block;
-	height: 24px;
-	width: 24px;
-	position: relative;
-	transition: all 0.3s liner;
-	margin:0 10px 0 0;
-	&:hover{
-		transform: scale(1.1);
+.btn-vk,
+.btn-fb {
+	color: #fff;
+	text-decoration: none;
+	margin: 0 10px;
+	&:hover {
+		color: #fff;
 	}
 }
-.social-icon_wiki {
-	background-image: url(../img/icon-wiki.png);
+.btn-vk {
+	background: #5A81AD;
+	border-color: #4073ad;
+	&:hover {
+		background: #5077a3;
+	}
 }
-.social-icon_fb {
-	background-image: url(../img/icon-fb.png);
-}
-.social-icon_tw {
-	background-image: url(../img/icon-tw.png);
-}
-.social-icon_vk {
-	background-image: url(../img/icon-vk.png);
-}
-.social-icon_youtube {
-	background-image: url(../img/icon-youtube.png);
-}
-.conteiner_main {
-	max-width: 960px;
-	padding: 0;
+.btn-fb {
+	background: #3B5997;
+	border-color: #244a96;
+	&:hover {
+		background: #324f8a;
+	}
 }

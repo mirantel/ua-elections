@@ -1,0 +1,17 @@
+git checkout master - перешли в масте
+[12:55:59 PM] Alexandr Karataiev: git remote update  - обновили мастер с удаленого репозитория
+[12:56:32 PM] Alexandr Karataiev: git checkout -b название локальной ветки origin/master
+[12:56:46 PM] Alexandr Karataiev: создали локальный бранч
+[12:57:00 PM] Alexandr Karataiev: теперь делаем тут изменения все
+[12:57:03 PM] Alexandr Karataiev: потом
+[12:57:35 PM] Alexandr Karataiev: git status увидеш список измененых файлов
+[12:58:37 PM] Alexandr Karataiev: git add имена файлов которые хочеш закомитеть через пробел, копируютса с текста предыдущей конс команды
+[12:58:53 PM] Alexandr Karataiev: git commit -m название комита
+[1:00:10 PM] Alexandr Karataiev: git branch выведет список бранчей и звездочку напротив бранча в котором ты сейчас, убедись что ты в своем бранче
+[1:00:58 PM] Alexandr Karataiev: git push origin название локальной ветки:название удаленной ветки
+
+
+
+ git push origin html-css-makeup:master
+
+html-css-makeup
