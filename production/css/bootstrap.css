@@ -700,6 +700,11 @@ textarea.input-lg, select[multiple].input-lg { height: auto; }
 
 input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block { width: 100%; }
 
+.close { float: right; font-size: 25.5px; font-weight: bold; line-height: 1; color: black; text-shadow: 0 1px 0 white; opacity: 0.2; filter: alpha(opacity=20); }
+.close:hover, .close:focus { color: black; text-decoration: none; cursor: pointer; opacity: 0.5; filter: alpha(opacity=50); }
+
+button.close { padding: 0; cursor: pointer; background: transparent; border: 0; -webkit-appearance: none; }
+
 @-ms-viewport { width: device-width; }
 
 .visible-xs, .visible-sm, .visible-md, .visible-lg { display: none !important; }
