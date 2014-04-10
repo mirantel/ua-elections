@@ -1,8 +1,10 @@
 $(window).load(function(){
 
-
-
+$('#vote-btn').attr('disabled', 'disabled');
 $("#js-voteData").height($("#js-voteResult").height() - 4);
+
+var valdYear = false;
+var valdList = false;
 
 $("#js-voteData, .vote__cell").sortable({
 	placeholder: "ui-sortable-placeholder",
@@ -12,6 +14,13 @@ $("#js-voteData, .vote__cell").sortable({
 			$(this).addClass("full");
 		}
 		$(this).children("input.js-votePlace").val($(this).children(".vote__item").attr("id"));
+		if ($("#js-voteResult").find(".vote__item").length){
+			valdList = true;
+		}
+		else {
+			valdList = false;
+		}
+		valid();
 	},
 	remove: function () {
 		if ($(this).hasClass("vote__cell")) {
@@ -29,16 +38,27 @@ $('#js-voteYear').on('input propertychange keyup', function(){
 	if (myYear.length > 3){
 		if ((myYear > minYear) && (myYear < maxYear)) {
 			$(this).parent().removeClass("has-error").addClass("has-success");
-			console.log("success");
+			valdYear = true;
 		}
 		else {
 			$(this).parent().removeClass("has-success").addClass("has-error");
-			console.log("error");
+			valdYear = false;
 		}
 	}
 	else {
 		$(this).parent().removeClass("has-success has-error").removeClass("");
+		valdYear = false;
 	}
+	valid();
 });
+
+function valid(){
+	if ( valdYear && valdList) {
+		$('#vote-btn').removeAttr("disabled");
+	}
+	else {
+		$('#vote-btn').attr('disabled', 'disabled');
+	}
+}
 
 });

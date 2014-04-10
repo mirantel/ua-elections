@@ -112,6 +112,9 @@
 		border-bottom-width: 2px;
 		height: 48px;
 	}
+	.btn-success[disabled] {
+		background: #999;
+	}
 	.vote-form-year{
 		width: 135px;
 	}
