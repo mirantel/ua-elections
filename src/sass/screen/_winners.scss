@@ -62,7 +62,8 @@
 }
 .winner {
 	width: 285px;
-	margin: 0 auto;
+	margin: 0 auto 20px;
+	padding-left: 20px;
 	&:before,
 	&:after {
 		content: " ";

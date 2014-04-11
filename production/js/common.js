@@ -5,6 +5,16 @@ $("#js-voteData").height($("#js-voteResult").height() - 4);
 
 var valdYear = false;
 var valdList = false;
+var valdLocation = false;
+
+function valid(){
+	if ( valdYear && valdList && valdLocation) {
+		$('#vote-btn').removeAttr("disabled");
+	}
+	else {
+		$('#vote-btn').attr('disabled', 'disabled');
+	}
+}
 
 $("#js-voteData, .vote__cell").sortable({
 	placeholder: "ui-sortable-placeholder",
@@ -52,13 +62,16 @@ $('#js-voteYear').on('input propertychange keyup', function(){
 	valid();
 });
 
-function valid(){
-	if ( valdYear && valdList) {
-		$('#vote-btn').removeAttr("disabled");
+$('#js-voteLocation').change(function() {
+	if ($("#js-voteLocation :selected").val() == 0){
+		$(this).parent().removeClass("has-success").addClass("has-error");
+		valdLocation = false;
 	}
 	else {
-		$('#vote-btn').attr('disabled', 'disabled');
+		$(this).parent().removeClass("has-error").addClass("has-success");
+		valdLocation = true;
 	}
-}
+	valid();
+});
 
 });

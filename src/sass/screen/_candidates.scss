@@ -50,8 +50,39 @@
 .candidate__link {
 	margin-right: 13px;
 }
+
+.social-icon {
+	display: inline-block;
+	vertical-align: middle;
+	height: 24px;
+	width: 24px;
+	position: relative;
+	transition: all 0.3s liner;
+	margin:0 7px 0 0;
+	&:hover{
+		transform: scale(1.1);
+	}
+}
+.social-icon_wiki {
+	background-image: url(../img/icon-wiki.png);
+	margin-left: 5px;
+}
+.social-icon_fb {
+	background-image: url(../img/icon-fb.png);
+}
+.social-icon_tw {
+	background-image: url(../img/icon-tw.png);
+}
+.social-icon_vk {
+	background-image: url(../img/icon-vk.png);
+}
+.social-icon_youtube {
+	background-image: url(../img/icon-youtube.png);
+}
+
 .candidate__program{
 	padding: 40px 0 20px;
+	text-align: justify;
 
 	h3, h4 {
 		text-align: center;
@@ -63,6 +94,7 @@
 	}
 	h4 {
 		font-size: 23px;
+		font-weight: bold;
 	}
 	p, li {
 		margin-bottom: 20px;

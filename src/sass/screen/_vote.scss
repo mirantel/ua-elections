@@ -1,15 +1,23 @@
-.vote {
-	max-width: 960px;
-	padding: 0;
+.main_vote {
+	background: #F0EEEA;
+	max-width: initial;
+	margin: 0;
+	padding-bottom: 70px;
 }
-.vote__row {
+.vote__description {
+	font-size: 17px;
+	text-align: center;
+}
+.vote__block {
 	background: url('../img/vote-arrow.png') 50% 0 no-repeat;
-	padding-top: 17px;
-	margin-top: -42px;
-	label{
+	padding-top: 20px;
+	margin-top: 9px;
+	width: 66.66666%;
+	float: left;
+	.label{
 		display: block;
 		text-align: center;
-		margin-bottom: 9px;
+		margin:0 0 10px;
 	}
 }
 .vote__col {
@@ -96,73 +104,92 @@
 		font-size: 14px;
 	}
 }
-
+.vote__candidates {
+	float: left;
+	width: 33.33333%;
+	padding: 53px 40px 20px;
+}
+.vote__candidate {
+	display: none;
+	&:first-child {
+		display: block;
+	}
+	h3 {
+		font-size: 17px;
+		margin: 10px 0 11px;
+		line-height: 1.4;
+		span {
+			font-size: 22px;
+			display: block;
+		}
+	}
+	p {
+		font-size: 13px;
+	}
+}
+.vote__panel {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	box-shadow: 0 -7px 13px rgba(0,0,0,.12);
+	border-top: 1px solid #c4c2be;
+}
 .vote__form{
-	p{
-		margin-bottom: 65px;
+	min-height: 63px;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 12px 10px;
+	label {
+		float: left;
+		margin: 3px 15px 0 0;
 	}
 	.form-group {
-		margin-bottom: 18px;
+		float: left;
+		margin: 0 32px;
 	}
 	.btn-success{
-		margin-top: 10px;
 		text-transform: uppercase;
-		width: 240px;
-		border-width: 0;
+		width: 206px;
 		border-bottom-width: 2px;
-		height: 48px;
+		border-color: #59ab00 #59ab00 #4c9100 #59ab00;
+		height: 38px;
 	}
 	.btn-success[disabled] {
-		background: #999;
+		background: #fff;
+		border-bottom-width: 1px;
+		height: 39px;
+		border-color: #f0eeea;
+		color: #c2beb7;
 	}
-	.vote-form-year{
-		width: 135px;
+	.form-conrtol {
+		font-size: 19px;
 	}
 }
-
-.photo-big {
-	border-radius: 10px;
-	max-width: 140px;
+.vote__year {
+	width: 84px;
+	height: 38px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
-.ico-stfalcon{
-	display: inline-block;
-	width: 20px;
-	height: 19px;
-	margin-right: 2px;
-	background: url(../img/ico-stfalcon.png);
-	background-repeat: no-repeat;
-	vertical-align: text-bottom;
+.vote__location {
+	width: 240px;
 }
-.social-icon-group {
-	font-size: 0;
-	display: inline-block;
-	vertical-align: middle;
-	margin: 0 0 0 12px;
-}
-
-.social-icon {
-	display: inline-block;
-	height: 24px;
-	width: 24px;
+.vote__alert {
+	width: 100%;
+	text-align: center;
+	color: #fff;
 	position: relative;
-	transition: all 0.3s liner;
-	margin:0 10px 0 0;
-	&:hover{
-		transform: scale(1.1);
+	line-height: 25px;
+	padding: 0 20px;
+	p{
+		margin: 10px 0;
 	}
 }
-.social-icon_wiki {
-	background-image: url(../img/icon-wiki.png);
+.vote__alert_danger {
+	background: #EE614E;
 }
-.social-icon_fb {
-	background-image: url(../img/icon-fb.png);
-}
-.social-icon_tw {
-	background-image: url(../img/icon-tw.png);
-}
-.social-icon_vk {
-	background-image: url(../img/icon-vk.png);
-}
-.social-icon_youtube {
-	background-image: url(../img/icon-youtube.png);
+.vote__alert_success {
+	background: #59AB00;
 }
