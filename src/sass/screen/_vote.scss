@@ -1,6 +1,6 @@
 .main_vote {
 	background: #F0EEEA;
-	max-width: initial;
+	max-width: inherit;
 	margin: 0;
 	padding-bottom: 70px;
 }
@@ -39,7 +39,7 @@
 	counter-reset: item;
 }
 .vote__cell {
-	height: 54px;
+	height: 47px;
 	border-top: 1px dashed #c2beb7;
 	padding: 2px;
 	position: relative;
@@ -60,7 +60,7 @@
 }
 .ui-sortable-placeholder {
 	background: rgba(75,65,54,.1);
-	height: 49px;
+	height: 42px;
 	border-radius: 3px;
 	margin-bottom: 5px;
 }
@@ -73,7 +73,7 @@
 	border: 1px solid #c2beb7;
 	padding: 2px;
 	padding-left: 53px;
-	line-height: 43px;
+	line-height: 36px;
 	font-size: 18px;
 	border-radius:3px;
 	cursor: pointer;
@@ -85,8 +85,8 @@
 	img{
 		border-radius: 2px;
 		vertical-align: top;
-		max-width: 43px;
-		max-height: 43px;
+		max-width: 36px;
+		max-height: 36px;
 		position: absolute;
 		top: 2px;
 		left: 2px;
@@ -159,12 +159,14 @@
 	.btn-success[disabled] {
 		background: #fff;
 		border-bottom-width: 1px;
-		height: 39px;
-		border-color: #f0eeea;
+		border-color: #c2beb7;
 		color: #c2beb7;
 	}
 	.form-conrtol {
 		font-size: 19px;
+	}
+	.form-control-hold {
+		float: left;
 	}
 }
 .vote__year {
