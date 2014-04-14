@@ -137,7 +137,7 @@ label, .label { display: inline-block; text-transform: uppercase; color: #4B4136
 .candidate__program { padding: 40px 0 20px; text-align: justify; }
 .candidate__program h3, .candidate__program h4 { text-align: center; }
 .candidate__program h3 { font-size: 25px; margin: 0 0 40px; line-height: 1.3; }
-.candidate__program h4 { font-size: 23px; font-weight: bold; }
+.candidate__program h4 { font-size: 20px; font-weight: bold; margin-top: 40px; margin-bottom: 12px; }
 .candidate__program p, .candidate__program li { margin-bottom: 20px; }
 .candidate__program ul li { list-style-type: none; position: relative; }
 .candidate__program ul li:before { position: absolute; top: -2px; left: -20px; content: "‒"; font-weight: bold; text-shadow: 0 -1px 0 #222222; }
