@@ -1,5 +1,5 @@
 body {
-	min-width: 550px;
+	min-width: 475px;
 }
 a {
 	text-decoration: underline;
@@ -85,13 +85,16 @@ label,
 }
 
 .footer {
-	padding: 60px 20px 120px;
+	padding: 60px 20px 60px;
 	text-align: center;
 	font-size: 13px;
 	vertical-align: middle;
 	p {
 		margin: 0;
 	}
+}
+.footer_vote {
+	padding-bottom: 120px;
 }
 .stfalcon {
 	font-family: Arial, Verdana, sans-serif;

@@ -1,5 +1,8 @@
 .candidate{
-	padding: 0 80px;
+	//.padding: 0 80px;
+	max-width: 820px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
 .candidate h2{
 	text-align: center;
@@ -31,8 +34,9 @@
 }
 
 .candidate__info {
-	float: left;
-	width: 620px;
+	//float: left;
+	//width: 620px;
+	display: table-cell;
 	h3 {
 		margin: -3px 0 11px;
 		font-size: 22px;
@@ -41,6 +45,7 @@
 		font-size: 17px;
 		color: #2C373C;
 		margin: 0 0 17px;
+		text-align: justify;
 	}
 }
 .candidate__links {
@@ -80,8 +85,18 @@
 	background-image: url(../img/icon-youtube.png);
 }
 
-.candidate__program{
-	padding: 40px 0 20px;
+.candidate__program {
+	padding: 40px 20px 20px;
+}
+.text-block {
+	padding: 20px;
+	max-width: 820px;
+	margin: 0 auto;
+	h2 {
+		text-align: center;
+	}
+}
+.candidate__program, .text-block{
 	text-align: justify;
 
 	h3, h4 {
@@ -111,6 +126,20 @@
 			content: "‒";
 			font-weight: bold;
 			text-shadow: 0 -1px 0 #222222;
+		}
+	}
+}
+@media (max-width: 730px) {
+	.candidate__photo {
+		text-align: center;
+		float: none;
+		width: 100%;
+		margin: 0 0 15px;
+	}
+
+	.candidate__info {
+		h3 {
+			text-align: center;
 		}
 	}
 }
