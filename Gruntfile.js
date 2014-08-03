@@ -20,7 +20,7 @@ grunt.initConfig({
 		global: {
 			src: 'production/css/*.css'
 		}
-	}
+	},
 
 	copy: {
 		img: {
@@ -75,7 +75,7 @@ grunt.initConfig({
 			files: 'src/img/**',
 			tasks: ['copy:img'],
 		}
-	},
+	}
 });
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-autoprefixer');
