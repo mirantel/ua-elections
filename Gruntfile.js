@@ -19,8 +19,8 @@ grunt.initConfig({
 		},
 		global: {
 			src: 'production/css/*.css'
-		},
-	},
+		}
+	}
 
 	copy: {
 		img: {
